@@ -1,0 +1,146 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: Members Page
+elements:
+  manageMembersbtn:
+    en_US:
+      web: //a[@id='manageMembersButton']
+      ie: css=a[id='manageMembersButton']
+  manageMembersTxt:
+    en_US:
+      web: //h2[text()='Manage Members']
+      ie: css=div.col-12>h2:nth-child(1)
+  primaryMemberTxt:
+    en_US:
+      web: //div[@class='card-header']
+      ie: css=div.card.card-fluid-xs>div.card-header:nth-child(1)
+  addMemberbtn:
+    en_US:
+      web: //*[@id='add-member-action']
+      ie: css=button[id='add-member-action']
+  sharemypersonalinfocheckbx:
+    en_US:
+      web: //input[@type='checkbox']
+      ie: css=div:nth-child(2)>input:nth-child(1)
+  revokeaccessbtn:
+    en_US:
+      web: //*[text()='Revoke Access']
+      ie: css=a.gold.grant-revoke-access
+  revokeaccesssuccestxt:
+    en_US:
+      web: //*[contains(text(),'successfully refused access')]
+      ie: css=div.alert.alert-success
+  editDetailsbtn:
+    en_US:
+      web: //a//i[@class='action gray icon icon-pencil']
+      ie: css=a>i[class='action gray icon icon-pencil']
+  editAddedMember:
+    en_US:
+      web: xpath=(//a//i[@class='action gray icon icon-pencil'])[2]
+      ie: css=div>div:nth-child(4)>div>div>a>i[class='action gray icon icon-pencil']
+  firstNameTxt:
+    en_US:
+      web: //*[@id='first_name']
+      ie: css=input[id='first_name']
+  lastNametxt:
+    en_US:
+      web: //*[@id='last_name']
+      ie: css=input[id='last_name']
+  birthMonthdrp:
+    en_US:
+      web: //*[@id='birth_month']
+      ie: css=select[id='birth_month']
+  birthDaydrp:
+    en_US:
+      web: //*[@id='birth_day']
+      ie: css=select[id='birth_day']
+  birthYeardrp:
+    en_US:
+      web: //*[@id='birth_year']
+      ie: css=select[id='birth_year']
+  membertypeinfodrp:
+    en_US:
+      web: //*[@id='account_type']
+      ie: css=select[id='account_type']
+  primaryaccountname:
+    en_US:
+      web: //a[@class='gold']
+      ie: css=a[class='gold']
+  addedmemberaccountname:
+    en_US:
+      web: xpath=(//h3//a[@class='gold'])[2]
+      ie: css=div.card-block:nth-child(4)>div:nth-child(1)>div>h3>a.gold
+  primaryaccountdetailsupdatetxt:
+    en_US:
+      web: //div[@class='alert alert-success']
+      ie: css=div.alert.alert-success
+  addMemberSavebtn:
+    en_US:
+      web: //a[@id='add-member-submit'] | //a[@id='edit-member-submit']
+      ie: css=a[id='add-member-submit'] | css=a[id='edit-member-submit']
+  infopopupbtn:
+    en_US:
+      web: //div//i[@data-placement='top']
+      ie: css=div>i[data-placement='top']
+  addmemberCancelbtn:
+    en_US:
+      web: //a[text()='Cancel']
+      ie: css=a[id='add-member-cancel']
+  addMemberDeleteBtn:
+    en_US:
+      web: //*[@id="add-member"]/div[4]/div[1]/div[2]/a[2]/i
+      ie: css=i[class='action gray icon icon-delete-trashcan']
+  confirmdeletememberbtn:
+    en_US:
+      web: //*[text()='Delete Member']
+      ie: css=div.modal-footer form.col-6.px-0>button.btn.btn-primary:nth-child(1)
+  membersupdatesuccestxt:
+    en_US:
+      web: //div[@class='alert alert-success']
+      ie: css=div[class='alert alert-success']
+  okaybtn:
+    en_US:
+      web: //*[text()='Okay']
+      ie: css=div:nth-child(6)>div:nth-child(6)>div>div>div>button[type='submit']
+  iagreebtn:
+    en_US:
+      web: //*[text()='I Agree']
+      ie: css=div:nth-child(5)>div.modal-dialog div>button:nth-child(1)
+  spouseminorerrortxt:
+    en_US:
+      web: //div//div[contains(text(),'spouse cannot be a minor')]
+      ie: css=div.alert.alert-danger
+  memberscounttxt:
+    en_US:
+      web: //div[@class='col-12 col-sm-8 text-neutral-dark']//p//span
+      ie: css=p:nth-child(1)>span:nth-child(1)
+  maxmembertxt:
+    en_US:
+      web: //*[@class='text-center']//strong
+      ie: css=p.text-center>strong:nth-child(1)
+  deletebtn:
+    en_US:
+      web: //i[contains(@class, 'text-neutral')]
+      ie: css=i[class='action icon icon-delete-trashcan disabled text-neutral']
+  firstNameErrorMessagetxt:
+    en_US:
+      web: //div[contains(text(),'First Name')]
+      ie: css=div.form-control-feedback:nth-child(1)
+  lastnameerrormessagetxt:
+    en_US:
+      web: //div[contains(text(),'Last Name')]
+      ie: css=div.form-control-feedback:nth-child(2)
+  addmembertxt:
+    en_US:
+      web: xpath=(//div[@class='card-header bt-1'])[1]
+      ie: css=div.card-header.bt-1:nth-child(3)
+      
+  memberShipHdr:
+    en_US:
+      android: //*[contains(@text,'Supercharge your savings with GoodRx Gold')]
+      
+  editPrimaryMemberDetailsbtn:
+     en_US:
+        web: //i[@class='action gray icon icon-pencil']
+        ie: css= div.col-4.text-right > a > i

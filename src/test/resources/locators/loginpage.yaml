@@ -1,0 +1,86 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+   en_US: Login Page
+elements:
+   mainLoginBtn:
+      en_US:
+         web: //a[text()='Log In']
+         mweb: //a[@aria-label='Log In']
+         ie: css=div[class='navbar-right']>a:nth-child(4)
+         android: //android.view.View[@text='Log In']
+   loginBtn:
+      en_US:
+         web: //button[text()='Log In']
+         android: //android.widget.Button[@text='Log In']
+         ie: css=div[class='col-12 col-sm-6']>button
+   forgotPwdLink:
+      en_US:
+         web: //a[text()='Forgot your password?']
+         ie: css=p[class='pl-1 pt-1']>a:nth-child(2)
+         android: //*[@text='Forgot your password?']
+   forgotpwdhdr:
+      en_US:
+         android: //*[@text='Forgot Password']
+   faceBookBtn:
+      en_US:
+         web: //*[contains(text(),'Facebook')]
+         ie: css=i[class='icon icon-facebook-box']
+   faceBookEmailField:
+      en_US:
+         web: //input[@id='email']
+         mweb: //input[@data-sigil='m_login_email']
+         ie: css=input[id='email']
+   faceBookPwdField:
+      en_US:
+         web: //input[@placeholder='Password']
+         mweb: //input[@name='pass']
+         ie: css=input[name='pass']
+   faceBookLoginBtn:
+      en_US:
+         web: //button[@id='loginbutton']
+         mweb: //button[@name='login']
+         ie: css=button[name='login']
+   continueBtn:
+      en_US:
+         web: //button[contains(text(),'Continue')]
+   googleLoginBtn:
+      en_US:
+         web: //a[contains(text(),'Google')]
+         ie: css=img[alt='Google Logo']
+   googleEmailField:
+      en_US:
+         web: //input[@type='email']
+         ie: css=input[type='email']
+   gmailNextButton:
+      en_US:
+         web: //*[text()='Next']
+         ie: css=span[class='RveJvd snByac']
+   googlePwdField:
+      en_US:
+         web: //input[@type='password']
+         ie: css=input[type='password']
+   errorMessageTxt:
+      en_US:
+         web: //div[@class='form-control-feedback' or contains(text(),'That email address')]
+         ie: css=div[class='form-control-feedback']
+   signUpFreeTrailBtn:
+      en_US:
+         web: //a[normalize-space(text())='Start Your']
+         ie: css=a[class='btn btn-lg btn-primary mb-1']
+   loginhBtn:
+      en_US:
+         web: //div[text()='Log In to GoodRx Gold']
+         ie: css=div[class='card-header']
+   emailTxt:
+      en_US:
+         web: //input[@id='email']
+         ie: css=input[id='email']
+         android: //android.widget.EditText[@resource-id='email']
+   passwordTxt:
+      en_US:
+         web: //input[@id='password']
+         ie: css=input[id='password']
+         android: //*[@resource-id='password']
+   emailblankError:
+      android: //*[contains(@text,'Please fill out this field')]

@@ -1,0 +1,63 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: "Account Page"
+elements:
+  accounthdr:
+    en_US:
+      web: //h2[text()='Account Settings']
+      ie: css=div.col-12>h2:nth-child(1)
+  welcomedevmodemsg:
+    en_US:
+      web: //p[@class='alert alert-success']
+      ie: css=p[class='alert alert-success']
+      
+  upgrademembershipbutton:
+    en_US:
+      web: //a[contains(text(),'Upgrade')]
+      ie: css=a.btn.btn-block.btn-primary.px-4
+      
+  upgradetofamilymembershippagegeader:
+     en_US:
+      web: //div[@class='row mb-4']/div/h2
+      ie: css=div[class='row mb-4']>div>h2
+  yesupgradenowbtn:
+     en_US:
+      web: //button[text()='Yes, upgrade now']
+      ie: css=button[class='upgrade-downgrade-btn btn btn-primary my-4']
+  successmsgofupgradefamilymembership:
+     en_US:
+      web: //div[@class='alert alert-success']
+      ie: css=div[class='alert alert-success']
+  downgrademembershipbutton:
+     en_US:
+      web: //a[text()='Downgrade Membership']
+      ie: css=div.row:nth-child(1) div:nth-child(2)>a.btn.btn-block.btn-large
+  downgrademembershiphdr:
+     en_US:
+      web: //h2[text()='Downgrade to Individual Membership']
+      ie: css=div>h2:nth-child(1)
+  yesdowngradenowbtn:
+     en_US: 
+      web: //button[text()='Yes, downgrade now']
+      ie: css=button.upgrade-downgrade-btn.btn.btn-primary.my-4:nth-child(5)
+  iagreetotermsbeforedowngradingerrormsg:
+     en_US:
+      web: //strong[contains(text(),'terms before downgrading')]
+      ie: css= p>strong:nth-child(1)
+  downgradecheckbox:
+     en_US:
+      web: //input[@type='checkbox']
+      ie: css=input[id='agree']
+  successmsgofdowngrademembership:
+     en_US:
+      web: //div[@class='alert alert-success']
+      ie: css=div[class='alert alert-success']
+  canceldowngradebtn:
+     en_US:
+      web: //a[contains(@href,'account?cancelDowngrade')]
+      ie: css=p:nth-child(6)>a:nth-child(1)
+  cancelupgradebtn:
+     en_US:
+      web: //a[text()='Cancel Upgrade']
+      ie: css=p:nth-child(6)>a:nth-child(1)

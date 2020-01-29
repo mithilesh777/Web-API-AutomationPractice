@@ -1,0 +1,10 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: Pharmacy Diectory Page
+elements:
+  pharmacydirectorytext:
+    en_US:
+      web: //h2[text()='Pharmacy Directory']
+      android: //*[@text='Pharmacy Directory']
+      ie: css=div.col-12>h2

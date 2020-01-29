@@ -1,0 +1,24 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+   en_US: Login Page
+elements:
+   mainLoginBtnLulu:
+      en_US:
+         web: //span[@class='header-login-label']
+   emailField:
+      en_US:
+         web: //input[@id='register_email']
+   proceedButton:
+      en_US:
+         web: //button[@id='validateEmailIdBtn']
+   passwordField:
+      en_US:
+         web: //input[@id='j_password']
+   remembermeCheckBox:
+      en_US:
+         web: //div[@class='checkbox-color']
+   loginBtn:
+      en_US:
+         web: //button[@class='form-control text-center btn-login checkIsHybrisCustomer']
+         

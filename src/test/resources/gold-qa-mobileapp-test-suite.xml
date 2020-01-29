@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="1"
+	name="GoodRxMobileWebTestSuite" skipfailedinvocationcounts="false"
+	junit="false" parallel="methods" data-provider-thread-count="5"
+	annotations="JDK">
+	<listeners>
+		<listener
+			class-name="com.goodrx.qa.web.AnnotationTransformer"></listener>
+	</listeners>
+	<parameter name="runLocally" value="false" />
+	<parameter name="useBrowserStack" value="true" />
+	<parameter name="browserStackOsVersion" value="7.0" />
+	<parameter name="browserStackOs" value="Android" />
+	<parameter name="browserStackLocal" value="true" />
+	<parameter name="protocol" value="https" />
+	<parameter name="seleniumport" value="443" />
+	<parameter name="mobileNodeType" value="appium" />
+	<parameter name="clientType" value="mobile" />
+	<parameter name="targetClient" value="android" />
+	<parameter name="appPath"
+		value="bs://aafec26d92f46234dabb42d644772bf12f6f0f60" />
+	<parameter name="mobileDeviceType" value="Samsung Galaxy S8"></parameter>
+	<parameter name="mobileDevice" value="android:7.0"></parameter>
+	<parameter name="customCapabilities"
+		value="com.goodrx.qa.web.BrowserStackCapability" />
+	<parameter name="executionTimeout" value="20000"></parameter>
+	<parameter name="bsProjectName" value="GoodRx Gold"></parameter>
+	<parameter name="bsBuildName" value="Mobile app Test - 1"></parameter>
+	<test thread-count="7" name="Android Test">
+		<groups>
+			<run>
+				<include name="Android" />
+				<exclude name="bug_skip"/>
+				
+			</run>
+		</groups>
+		<classes>
+			<class name="com.goodrx.qa.test.TestFooter" />
+			<class name="com.goodrx.qa.test.TestManageMembers" />
+			<class name="com.goodrx.qa.test.TestFooter" />
+			<class name="com.goodrx.qa.test.TestLogin" />
+			<class name="com.goodrx.qa.test.TestDrugLookUp" />
+			<class name="com.goodrx.qa.test.TestHamburger" />
+			<class name="com.goodrx.qa.test.TestPharmacyDirectorylink" />
+			<class name="com.goodrx.qa.test.TestSupport" />
+			<class name="com.goodrx.qa.test.TestHomePage" />
+			<class name="com.goodrx.qa.test.TestGetAPrescriptionLink" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

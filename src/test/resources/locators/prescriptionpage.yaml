@@ -1,0 +1,20 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: Prescription Page
+elements:
+  getPrescriptionTab:
+    en_US:
+      web: //a[text()='Get a Prescription']
+      android: //*[@text='Get']
+  headerTxt:
+    en_US:
+      web: //h2[contains(text(),'Prescription')]
+      ie: css=div.col>h2.mb-3.mb-sm-0.m-0.float-sm-left
+      android: //*[contains(@text,'Prescription for Just')]
+  logoTxt:
+    en_US:
+      web: //img[@alt='Lemonaid logo']
+      ie: css=img.ml-2.ml-sm-0.d-sm-block
+      android: //*[@text='Lemonaid logo']
+      

@@ -1,0 +1,44 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+   en_US: Card Page
+elements:
+   yourCardTab:
+      en_US:
+         web: //i[@class='icon icon-credit-card']
+         mweb: //a[@aria-label='Your GoodRx Gold Card']
+         ie: css=a[aria-label='Your GoodRx Gold Card']
+         android: null
+   printCardBtn:
+      en_US:
+         web: //button[text()='Print Card']
+   textMyCardBtn:
+      en_US:
+         web: //button[text()='Text My Card Info']
+         ie: css=button[id='mobileTextButton']
+   emailMyCard:
+      en_US:
+         web: //button[text()='Email My Card Info']
+         ie: css=button[id='emailButton']
+   requestANewCardLnk:
+      en_US:
+         web: //a[text()='Request a new card by mail']
+         ie: css=a[class='text-gold d-block text-center pt-3 hidden-print']
+   yourGoodRxGoldTxt:
+      en_US:
+         web: //*[contains(text(),'Your GoodRx Gold Card')]
+   getCardInfoByText:
+      en_US:
+         web: //div[@class='modal-header']/h5
+         ie: css=div[class='modal-header']>h5
+   expectgetMessageTxt:
+      en_US:
+         web: //div[@class='alert alert-info']
+         ie: css=div[class='alert alert-info']
+   getCardInfoByEmail:
+      en_US:
+         web: xpath=(//div[@class='modal-header']/h5)[2]
+         ie: css=div[id='emailModal']>div>form>div:nth-child(2)>div:nth-child(1)>h5[class='modal-title']
+   printpreview:
+      en_US:
+         web: //body//print-preview-app

@@ -1,0 +1,35 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+   en_US: Home Page
+elements:
+   groceryCategory:
+      en_US:
+         web: //a[@href='/en-ae/grocery/c/HYGRCR00001']
+   groceryText:
+      en_US:
+         web: //h1[@class='clp-left-header']
+   nextBtnPagination:
+      en_US:
+         web: //a[@rel='next']
+   filterSelect:
+      en_US:
+         web: xpath=(//span[@class='facet__list__text_label'])[3]
+   productNameFirst:
+      en_US:
+         web: //div[@id='productName23706']
+   brandsinFilter:
+      en_US:
+         web: //div[@id='facetFilter0']//ul[contains(@class,'facet__list js-facet-list scrollbar scrollbar-component')]
+   filterSelect2:
+      en_US:
+         web: xpath=(//span[@class='facet__list__text_label'])[4]
+   productNameMultipleFilters:
+      en_US:
+         web: //div[@id='productName459919']
+   brandFiltersExpansion:
+      en_US:
+         web: xpath=(//span[@class='glyphicon glyphicon-menu-down facet-header-arrow'])[1]
+   brandSearchField:
+      en_US:
+         web: xpath=(//input[@class='form-control facet-autocomplete-box'])[1]

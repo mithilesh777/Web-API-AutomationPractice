@@ -1,0 +1,74 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: Footer Page
+elements:
+  faqlnk:
+    en_US:
+      web: //a[text()='Frequently Asked Questions']
+      ie: css=body>footer>ul>li[class='nav-item']>a[target]
+      android: //*[@text='Frequently Asked Questions']
+  privacypolicylnk:
+    en_US:
+      web: //a[text()='Privacy Policy']
+      ie: css=ul.nav.flex-column.flex-md-row.footer-links>li.nav-item:nth-child(2)>a.nav-link
+      android: //*[@text='Privacy Policy']
+  termsofservicelnk:
+    en_US:
+      web: //a[text()='Terms of Service']
+      ie: css=ul.nav.flex-column.flex-md-row.footer-links li.nav-item:nth-child(3)>a.nav-link
+      android: //*[@text='Terms of Service']
+  bonusoffertxt:
+    en_US:
+      web: //*[contains(text(),'Bonus offers for GoodRx Gold members')]
+      ie: css=p:nth-child(4)>a.text-gold
+      android: //*[contains(@text,'Bonus offer')]
+  disclaimertxt:
+    en_US:
+      web: //*[contains(text(),'Disclaimer')]
+      ie: css=p:nth-child(4)>a.text-gold
+      android: //*[contains(@text,'Disclaimer')]
+  disclaimerHeader:
+    en_US:
+      web: //*[contains(text(),'GoodRx Gold Disclaimer')]
+      ie: css=p:nth-child(4)>a.text-gold
+      android: //*[contains(@text,'GoodRx Gold Disclaimer')]
+  bonusofferhdr:
+    en_US:
+      android: //*[contains(@text,'More GoodRx Gold Member Benefits')]
+  privacypolicyhdr:
+    en_US:
+      web: //h2[text()='GoodRx Gold Privacy Policy']
+      ie: css=div>h2:nth-child(1)
+      android: //*[@text='GoodRx Gold Privacy Policy']
+  termsofservicehdr:
+    en_US:
+      web: //h2[text()='Terms of Service']
+      ie: css=div>h2:nth-child(1)
+      android: //*[@text='Terms of Service']
+  Benefitshdr:
+    en_US:
+      web: //h2[text()='More GoodRx Gold Member Benefits']
+      ie: css=div>h2:nth-child(1)
+      android: //*[@text='More GoodRx Gold Member Benefits']
+  effectivedate:
+    en_US:
+      web: //strong[contains(text(),'Effective Date')]
+      ie: css=strong:nth-child(2)
+      android: //*[contains(@text,'Effective Date')]
+  goodrxtxt:
+    en_US:
+      web: //header[@class='page-header']//h1
+      ie: css=header[class='page-header']>h1
+  helpLineNumberFooterPage:
+    en_US:
+      web: //*[@id="navbarSupportedContent"]/div/a
+  helpLineNumberFooterPageAppView:
+    en_US:
+      mweb: //android.view.View[@text='1-855-487-0694']
+  phoneNumberApp:
+    en_US:
+      mweb: //android.widget.EditText[@text='18554870694' or @text='1-855-487-0694' or @text='1 855-487-0694' or @text='1 855 487 0694']
+  preference:
+    en_US:
+      mweb: //*[@text='JUST ONCE' or @text='Just Once' or @text='just once']

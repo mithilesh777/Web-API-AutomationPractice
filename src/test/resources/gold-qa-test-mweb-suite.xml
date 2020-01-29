@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1"
+	name="GoodRxMobileWebTestSuite" skipfailedinvocationcounts="false"
+	junit="false" parallel="methods" data-provider-thread-count="5"
+	annotations="JDK">
+	<listeners>
+		<listener
+			class-name="com.goodrx.qa.web.AnnotationTransformer"></listener>
+	</listeners>
+	<parameter name="mobileNodeType" value="appium" />
+	<parameter name="runLocally" value="false" />
+	<parameter name="useBrowserStack" value="true" />
+	<parameter name="browserStackOsVersion" value="9.0" />
+	<parameter name="browserStackOs" value="android" />
+	<parameter name="browserStackLocal" value="true" />
+	<parameter name="seleniumhost" value="localhost" />
+	<parameter name="protocol" value="https" />
+	<parameter name="seleniumport" value="443" />
+	<parameter name="clientType" value="mobile" />
+	<parameter name="targetClient" value="mweb" />
+	<parameter name="customCapabilities"
+		value="com.goodrx.qa.web.BrowserStackCapability" />
+	<parameter name="bsProjectName" value="GoodRx Gold" />
+	<parameter name="bsBuildName" value="mweb Browser Test - 1" />
+	<parameter name="executionTimeout" value="20000" />
+	<parameter name="mobileDeviceType"
+		value="Google Pixel 3 XL" />
+	<parameter name="mobileDevice" value="android:9.0" />
+	<parameter name="browser" value="chrome" />
+	<parameter name="executionTimeout" value="20000" />
+	<test thread-count="25" name="Gold QA - Chrome">
+		<groups>
+			<run>
+				<include name="All" />
+				<exclude name="skip" />
+				<exclude name="bug_skip" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.goodrx.qa.test.TestSignUpForm" />
+			<class name="com.goodrx.qa.test.TestManageMembers" />
+			<class name="com.goodrx.qa.test.TestFooter" />
+			<class name="com.goodrx.qa.test.TestLogin" />
+			<class name="com.goodrx.qa.test.TestDrugLookUp" />
+			<class name="com.goodrx.qa.test.TestHamburger" />
+			<class name="com.goodrx.qa.test.TestPharmacyDirectorylink" />
+			<class name="com.goodrx.qa.test.TestSupport" />
+			<class name="com.goodrx.qa.test.TestCard" />
+			<class name="com.goodrx.qa.test.TestAccount" />
+			<class name="com.goodrx.qa.test.TestHomePage" />
+			<class name="com.goodrx.qa.test.TestGetAPrescriptionLink" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

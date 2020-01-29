@@ -1,0 +1,36 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: DrugLookUp Page
+elements:
+  druglookuplink:
+    en_US:
+      web: //span[text()='Drug Lookup']
+  drugnametextfield:
+    en_US:
+      web: //input[@placeholder='Type your drug name']
+      ie: css=input[placeholder='Type your drug name']
+      android: //android.widget.EditText[@class='android.widget.EditText']
+      
+  drugLookUpPage:
+    en_US:
+      android: //*[contains(@text,'GoodRx helps you save')]
+      
+  searchicn:
+   en_US:
+      web: //button[@id='search-button']
+      ie: css=button[id='search-button']
+      android: //*[@resource-id,'search-button']
+  resulttext:
+    en_US:
+      web: //*[@id='typeaheadNoResults']//h3
+      ie: css=div[id='typeaheadNoResults']>h3
+      android: //*[@resource-id='typeaheadNoResults']
+  druginformationtext:
+    en_US:
+      web: xpath=(//h3[text()='Drug Information']/../p)[2]
+      ie: css=div[class='col-12 mb-4']
+      mweb: xpath=(//h3[text()='Drug Information']/../p)[2]
+  signUpFreeTrailBtn:
+    en_US:
+      web: //a[contains(text(),'Free')]

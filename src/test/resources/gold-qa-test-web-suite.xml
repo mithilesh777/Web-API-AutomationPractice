@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="GoodRxTestSuite"
+	skipfailedinvocationcounts="false" junit="false" parallel="methods"
+	data-provider-thread-count="5" annotations="JDK">
+	<listeners>
+		<listener
+			class-name="com.lulu.qa.web.AnnotationTransformer" />
+	</listeners>
+	<parameter name="runLocally" value="false" />
+	<parameter name="useBrowserStack" value="true" />
+	<parameter name="browserStackOsVersion" value="10" />
+	<parameter name="browserStackOs" value="Windows" />
+	<parameter name="browserStackLocal" value="true" />
+	<parameter name="seleniumhost" value="localhost" />
+	<parameter name="protocol" value="https" />
+	<parameter name="seleniumport" value="443" />
+	<parameter name="clientType" value="web" />
+	<parameter name="targetClient" value="web" />
+	<parameter name="customCapabilities"
+		value="com.lulu.qa.web.BrowserStackCapability" />
+	<parameter name="executionTimeout" value="20000" />
+	<parameter name="bsProjectName" value="GoodRx Gold" />
+	<parameter name="bsBuildName" value="Chrome Browser Test - 1" />
+	<parameter name="browser" value="firefox" />
+	<test thread-count="5" name="Gold QA - Chrome">
+		<groups>
+			<run>
+				<include name="All" />
+				<exclude name="Skip" />
+				<exclude name="bug_skip" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.lulu.qa.test.TestHomePage" />
+		
+		</classes>
+	</test>
+</suite> <!-- Suite -->

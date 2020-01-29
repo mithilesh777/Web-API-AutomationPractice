@@ -1,0 +1,100 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+   en_US: Hamburger Page
+elements:
+   hamburgericon:
+      en_US:
+         web: //i[@class='icon icon-menu']
+         ie: css=button.navbar-toggler
+         android: //*[@text='Toggle navigation']
+   dentalplanlink:
+      en_US:
+         web: //a[contains(text(), 'Dental')]
+         ie: css=div:nth-child(2)>a.gold
+   heartlandlink:
+      en_US:
+         web: //a[text()='Heartland Veterinary Supply ']
+         ie: css=a[href='http://www.heartlandvetsupply.com/']
+   totaldiabetessupplylink:
+      en_US:
+         web: //a[contains(text(),'TotalDiabetesSupply')]
+         ie: css=a[href='https://www.totaldiabetessupply.com']
+   personallabslink:
+      en_US:
+         web: //a[contains(text(),'Personal Labs')]
+         ie: css=a[href='http://go.personalabs.com/goodrx']
+   additionalbenefitslink:
+      en_US:
+         web: //a[contains(text(), 'Additional')]
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(7)
+         android: //*[@text='Additional']
+   goodrxtext:
+      en_US:
+         web: xpath=(//*[contains(text(),'GOODRX')])[2]
+         ie: css=span:nth-child(2)>font:nth-child(1)
+   goodgoldtxt:
+      en_US:
+         web: //h2[text()='More GoodRx Gold Member Benefits']
+         ie: css=div.col-12>h2:nth-child(1)
+         android: //*[@text='More GoodRx Gold Member Benefits']
+   dentalplanstxt:
+      en_US:
+         web: xpath=(//div[contains(text(),'Use')])[2]
+   heartlandtxt:
+      en_US:
+         web: xpath=(//*[@title='Heartland Veterinary Supply & Pharmacy'])[1]
+         ie: css=a[id='logo']
+   personallabsgoodrxtxt:
+      en_US:
+         web: //div//h1[@class='title']
+         ie: css=div>h1[class='title']
+   goodrxinfotxt:
+      en_US:
+         web: //*[text()='Welcome to GoodRx loyalty customer!']
+   membershiplink:
+      en_US:
+         web: //a[@aria-label='Memberships']
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(4)
+         android: //*[@text='Memberships']
+   membershiphdr:
+      en_US:
+         android: //*[@text='GoodRx Gold Memberships']
+   accountlink:
+      en_US:
+         web: //a[@aria-label='Account']
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(10)
+   signoutbtn:
+      en_US:
+         web: //a[text()='Sign Out']
+         ie: css=li.nav-item:nth-child(11)>a.nav-link
+   druglookupfromhamburgerlink:
+      en_US:
+         web: //a[@aria-label='Drug']
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(2)
+         android: //*[@text='Drug']
+   helpLinkfromhamburgerlink:
+      en_US:
+         web: //a[@aria-label='Help']
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(2)
+         android: //*[@text='Help']
+   goldRxGoldHamburgerlink:
+      en_US:
+         android: //*[@text='GoodRx']
+   findapharmacy:
+      en_US:
+         web: //a[@aria-label='Find']
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(3)
+         android: //android.view.View[@text='Find']
+   getapriscription:
+      en_US:
+         web: //a[@aria-label='Get']
+         ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(5)
+         android: //*[@text='Get']
+   totalDiabeteslogo:
+      en_US:
+         web: id=logo
+         ie: css=a[id='logo']
+   loginBtnHamburgerPage:
+      en_US:
+         android: //*[@text='Log']

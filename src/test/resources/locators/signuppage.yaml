@@ -1,0 +1,299 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+   en_US: Signup Page
+elements:
+   loginBtn:
+      en_US:
+         web: //*[@class='navbar-right']/a[text()='Log In']
+         ie: css=div[class='navbar-right']>a:nth-child(4)
+   startfreeBtn:
+      en_US:
+         web: //strong[text()='Free']
+         ie: css=a[class$='mb-1']>strong
+   useAsItIsTxt:
+      en_US:
+         web: //*[text()='Use as it is']
+         ie: css=div[class='smarty-choice-alt']>a:nth-child(2)
+   stepOneOutTxt:
+      en_US:
+         web: //li/*[text()='1']
+         mweb: //li/*[text()='1']
+         ie: css=span[class='progress-step']
+   stepOneOutFiveTxt:
+      en_US:
+         web: //*[text()='Account Setup']
+         ie: css=span[class='progress-text hidden-xs-down']
+   emailAddressTfld:
+      en_US:
+         web: //*[@id='email']
+         ie: css=input[id='email']
+   passwordTfld:
+      en_US:
+         web: //*[@id='password']
+         ie: css=input[id='password']
+   messageEmailAlreadyTxt:
+      en_US:
+         web: //*[contains(text(),'email has already')]
+         ie: css=div.has-danger:nth-child(3)>div[class$='text-small']
+   messagePasswordAtleastTxt:
+      en_US:
+         web: //*[contains(text(),'at least 6 char')]
+         ie: css=div.has-danger:nth-child(4)>div[class$='text-small']
+   passwordAtleastTxt:
+      en_US:
+         web: //*[contains(text(),'at least one letter and one number')]
+         ie: css=div.has-danger:nth-child(4)>div[class$='text-small']
+   createMyAccountBtn:
+      en_US:
+         web: //*[contains(text(),'Create My')]
+         ie: css=button[class$='btn-signup']
+   startFreeTrialV2Btn:
+      en_US:
+         web: //*[contains(text(),'Trial')]
+         ie: css=button[class$='btn-signup']
+   stepTwoTxt:
+      en_US:
+         web: //li/*[text()='2']
+         ie: css=li:nth-child(2)>span.progress-step:nth-child(1)
+   twoChooseTxt:
+      en_US:
+         web: //li[@class='active']/*[text()='2']
+         ie: css=li[class='active']>span
+   radioIndBtn:
+      en_US:
+         web: //*[contains(text(),'Individual')]
+         ie: css=form[id='signUpTwo']>div:nth-child(3)>div:nth-child(1)>label>span,div[class='card-block']>div>div:nth-child(1)>div>div>strong
+   individualMemBtn:
+      en_US:
+         web: //*[contains(@aria-label,'Individual')]
+         ie: css=input[aria-label='Individual Membership Plan']
+         android: //*[contains(@text,'Individual')]
+   familyMemTxt:
+      en_US:
+         web: //*[contains(text(),'Family')]
+         ie: css=form[id='signUpTwo']>div:nth-child(3)>div:nth-child(2)>label>span,div[class='card-block']>div>div:nth-child(2)>div>div>strong
+         android: //*[contains(@text,'Family')]
+   familyRadionBtn:
+      en_US:
+         web: //*[contains(@aria-label,'Family')]
+         ie: css=input[aria-label='Family Membership Plan']
+   continueBtn:
+      en_US:
+         web: //*[text()='Continue']
+         ie: css=button[type='submit']
+   continueTwoBtn:
+      en_US:
+         web: //*[contains(text(),'Continue')]
+         ie: css=div>button[class$='btn-signup'],button[type='submit']
+   threeOutOfFiveTxt:
+      en_US:
+         web: //li/*[text()='3']
+   createYourCardBtn:
+      en_US:
+         web: //*[text()='Create Your Card']
+   firstNameTfld:
+      en_US:
+         web: //*[@id='first_name']
+         ie: css=input[id='first_name']
+   lastNameTfld:
+      en_US:
+         web: //*[@id='last_name']
+         ie: css=input[id='last_name']
+   monthDds:
+      en_US:
+         web: //*[@id='birth_month']
+         ie: css=select[id='birth_month']
+   dayDds:
+      en_US:
+         web: //*[@id='birth_day']
+         ie: css=select[id='birth_day']
+   yearDds:
+      en_US:
+         web: //*[@id='birth_year']
+         ie: css=select[id='birth_year']
+   continueNextStepBtn:
+      en_US:
+         web: //*[text()='Continue to Next Step']
+         ie: css=button[class='btn btn-block btn-lg btn-primary']
+   navbackLnk:
+      en_US:
+         web: //*[contains(text(),'Back')]
+         ie: css=a[class='nav-link']
+   streetNameTfld:
+      en_US:
+         web: //*[@id='address_1']
+         ie: css=input[id='address_1']
+   cityTfld:
+      en_US:
+         web: //*[@id='city']
+         ie: css=input[id='city']
+   zipcodeTfld:
+      en_US:
+         web: //*[@id='zip_code']
+         ie: css=input[id='zip_code']
+   stateDds:
+      en_US:
+         web: //*[@id='state']
+         ie: css=select[id='state']
+   startTrialBtn:
+      en_US:
+         web: //strong[text()='Free']
+   startFreeTrialBtn:
+      en_US:
+         web: //a[contains(text(),'Trial')]
+   membershipPlansTxt:
+      en_US:
+         web: //*[contains(text(),'Choose the plan')]
+         ie: css=form[id='signUpTwo']>div:nth-child(2)>div>p
+   selectDateWarningTxt:
+      en_US:
+         web: //*[text()='Date of Birth']/..//p[2]
+         ie: css=div[class='has-danger']>p:nth-child(3)
+   nextStepContinuev1Btn:
+      en_US:
+         web: //button[contains(text(),'Next Step')]
+         ie: css=button[class='btn btn-block btn-lg btn-primary']
+   backbutton:
+      en_US:
+         web: //b[text()='< Back']
+         ie: a>b
+      navbarAccount:
+         en_US:
+            web: //*[@class='navbar-right']//*[contains(@href,'/account')]
+   pauseAccount:
+      en_US:
+         web: //*[text()='Pause Account']
+         ie: css=a[href$='/pause']
+   reasonCheckbox:
+      en_US:
+         web: xpath=(//*[@type='checkbox'])[2]
+         ie: css=div[class='form-group']>div:nth-child(2)>label>input
+   pauseButtonReasonPage:
+      en_US:
+         web: //button[text()='Pause Account']
+         ie: css=button[name='submit']
+   pauseButtonTextlabel:
+      en_US:
+         web: xpath=(//*[text()='Pause Account'])[1]
+         ie: css=div>h2
+   alertPauseMessage1:
+      en_US:
+         web: //*[@role='alert']
+         ie: css=div[role='alert']
+   alertPauseMessage2:
+      en_US:
+         web: //*[text()='Account Paused']
+         ie: css=div[role='alert']>strong>a
+   enableAccount:
+      en_US:
+         web: //*[text()='Enable Account']
+         ie: css=div[class='row']>div:nth-child(2)>a[href$='/enable']
+   enableAccountBtn:
+      en_US:
+         web: //button[text()='Enable Account']
+         ie: css=form[id='enableAccount']>button
+   alertEnableMessage:
+      en_US:
+         web: //*[contains(text(),'Account successfully enabled!')]
+         mweb: //*[contains(text(),'Account successfully enabled!')]
+         ie: css=div[role='alert']
+   deleteButton:
+      en_US:
+         web: //*[text()='Cancel And Delete Account']
+         ie: css=a[href$='/cancel']
+   cancelAndDeletePageButton:
+      en_US:
+         web: //button[text()='Cancel and Delete Account']
+         ie: css=button[name='submit']
+   checkboxReasonToDelete:
+      en_US:
+         web: xpath=(//*[@type='checkbox'])[1]
+         ie: css=div[class='form-group']>div:nth-child(4)>label>input
+   cardNumber:
+      en_US:
+         web: name=cardnumber
+         ie: css=span:nth-child(1)>input[name='cardnumber']
+         mweb: //input[@name='cardnumber'][@inputmode='numeric'] | //div[@id='card-number']
+         firefox: name=cardnumber
+   cardExpiry:
+      en_US:
+         web: //input[@name='exp-date'][@inputmode='numeric']
+         ie: css=span:nth-child(1)>input[name='exp-date']
+         mweb: //input[@name='exp-date'][@inputmode='numeric']
+         firefox: css=span:nth-child(1)>input[name='exp-date']
+   cardCVC:
+      en_US:
+         web: //input[@name='cvc'][@inputmode='numeric']
+         ie: css=span:nth-child(1)>input[name='cvc']
+         mweb: //input[@name='cvc'][@inputmode='numeric']
+         firefox: css=span:nth-child(1)>input[name='cvc']
+   cvcInfoIcon:
+      en_US:
+         web: //*[@data-original-title='What is a CVC?']
+         ie: css=i[data-original-title='What is a CVC?']
+   cvcInfoText:
+      en_US:
+         web: //*[@class='popover-content']
+         ie: css=div[class='popover-content']
+   finshBtn:
+      en_US:
+         web: //*[text()='Finish']
+         ie: css=button[id='stripe-continue-button']
+   createAccountBtn:
+      en_US:
+         web: //*[text()='Create Account']
+         mweb: //*[text()='Create Account']
+         ie: css=button[id='stripe-continue-button']
+   cardNumberWarningMessage:
+      en_US:
+         web: //*[text()='Your card number is invalid.']
+         ie: css=div[id='stripe-number']>div:nth-child(3)
+   cardNumberBlankMessage:
+      en_US:
+         web: //*[contains(text(),'Your card number is incomplete.')]
+         ie: css=div[id='stripe-number']>div:nth-child(3)
+   cardExpiryWarningMessage:
+      en_US:
+         web: //*[contains(text(),'expiration year is in the past.')]
+         ie: css=div[id='stripe-expiry']>div:nth-child(3)
+   cardCvcWarningMessage:
+      en_US:
+         web: //*[contains(text(),'security code is incomplete.')]
+         ie: css=div[id='stripe-cvc']>div:nth-child(4)
+   goodRxGoldTermsConditions:
+      en_US:
+         web: //h5[text()='GoodRx Gold Terms & Conditions']
+   iAgreeButton:
+      en_US:
+         web: //button[contains(text(),'I agree')][@id='agree-to-tos']
+         ie: css=button[id='agree-to-tos']
+   iDonotAgreeButton:
+      en_US:
+         web: //button[contains(text(),'I do not agree')]
+         ie: css=button[class='btn']
+   loginWarnMessageWithDeleteAccount:
+      en_US:
+         web: //*[contains(text(),'you have an account')]
+         ie: css=div[class$='has-danger']>div:nth-child(3)>div:nth-child(1)
+   getTextAsPaymentInfo:
+      en_US:
+         web: //*[contains(@class,'card-fluid-xs')]//*[contains(text(),'Payment Info')]
+         ie: css=div[class='card-header']
+   logout:
+      en_US:
+         web: //*[text()='Logout']
+         ie: css=span>a[class='alert-link']
+   mainLoginBtn:
+      en_US:
+         web: //a[text()='Log In']
+         mweb: //a[@aria-label='Log In']
+         ie: css=div[class='navbar-right']>a:nth-child(4)
+   goodRxLogo:
+      en_US:
+         web: //*[@class='logo']/img
+         ie: css=a[class='logo']>img
+   clickIAgreeHomePageTxt:
+      en_US:
+         web: //*[text()='Thank you for joining GoodRx Gold!']
+         ie: css=div[id='add-members-slide']>div>h

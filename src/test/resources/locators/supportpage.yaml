@@ -1,0 +1,16 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: Support Page
+elements:
+  helpicon:
+    en_US:
+      web: //*[@class='icon icon-help-outline']
+      mweb: //a[@aria-label='GoodRx Gold Help']
+      ie: css=span.rsp-nav-account.ml-1
+      android: //*[@text='GoodRx Gold Help']
+  support:
+    en_US:
+      web: //a[text()='Support']
+      ie: css=ol>li>a
+      android: //*[contains(@text,'What is GoodRx Gold')]

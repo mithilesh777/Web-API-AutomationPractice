@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite annotations="JDK" data-provider-thread-count="5"
+	parallel="methods" junit="false" skipfailedinvocationcounts="false"
+	name="GoodRxTestSuite" verbose="1" thread-count="5">
+	<parameter name="runLocally" value="true" />
+	<parameter name="seleniumhost" value="localhost" />
+	<parameter name="seleniumport" value="4444" />
+	<parameter name="clientType" value="web" />
+	<parameter name="targetClient" value="ie" />
+	<parameter name="browser" value="chrome" />
+	<test name="Gold QA - Chrome" thread-count="5">
+	
+		<groups>
+			<run>
+				<include name="All" />
+			</run>
+		</groups>
+		<classes>			
+			
+			<class name="com.lulu.qa.testpractice.ProductListingPage" />
+			
+			
+		</classes>
+	</test>
+</suite>

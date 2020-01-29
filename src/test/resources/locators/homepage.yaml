@@ -1,0 +1,141 @@
+defaultClient: web
+defaultLocale: en_US
+pageTitle:
+  en_US: Home Page
+elements:
+  locationLabelBtn:
+    en_US:
+      web: //button[@id='loadDeliveryMethodsPopup']
+      ie: css=button#loadDeliveryMethodsPopup
+  deliveryLocationDialog:
+    en_US:
+      web: //div[@class='modal-header']
+  popupBtn:
+    en_US:
+      web: //span[@class="close-btn"]
+         
+  countryBahrainIcon:
+    en_US:
+      web: //p[contains(text(),'BAHRAIN')]
+  countryUAEIcon:
+    en_US:
+      web: //p[contains(text(),'UAE')]
+  uaeCityDropDown:
+    en_US:
+      web: //span[contains(text(),'Select Your City')]
+  uaeCityList:
+    en_US:
+      web: //button[@id='dzCountrySelection']
+  uaeCityAjmanBtn:
+    en_US:
+      web: //input[@id='country-AE-AJM']
+  startFreeTrailBtn:
+    en_US:
+      web: //strong[text()='Free'] | //*[contains(text(),'Trial')]
+      ie: css=a[class$='mb-1']
+      android: //*[@text='Start Your Free Trial Now']
+  pharmacyDirectoryTab:
+    en_US:
+      web: //span[text()='Pharmacy Directory']
+      mweb: //a[text()='Find A Pharmacy']
+      ie: css=a[class$=' mr-3']>span:nth-child(1)
+      android: //android.view.View[@text='Find']
+  pharmacyLinkText:
+    en_US:
+      android: //*[@text='participating pharmacies']
+  fullListOfPharmacy:
+    en_US:
+      web: //span[text()='Full list of pharmacy chains']
+      mweb: //button[@id='activate-full-list']
+      ie: css=button[id='activate-full-list']
+      android: //*[@resource-id='activate-full-list']
+  acmeMarkets:
+    en_US:
+      web: //*[text()='Acme Markets Pharmacy']
+      ie: css=ul.list-unstyled.mb-0>li:nth-child(1)
+  albertsons:
+    en_US:
+      web: //*[text()='Albertsons']
+      ie: css=ul.list-unstyled.mb-0>li:nth-child(2)
+  krogerPharmacy:
+    en_US:
+      web: //*[text()='Kroger Pharmacy']
+  jayC:
+    en_US:
+      web: //*[text()='JayC']
+      ie: css=ul.list-unstyled.mb-0>li:nth-child(14)
+  winnDixie:
+    en_US:
+      web: //*[text()='Winn-Dixie']
+      ie: css=div[class='col-12 col-sm-6'] > ul[class='list-unstyled']>li:nth-child(14)
+  invalidErrorMessage:
+    en_US:
+      web: //div[@class='form-control-feedback-wrapper']
+      ie: css=div[class$='wrapper']
+      android: //*[contains(@text,'please')]
+  hamburgerIcon:
+    en_US:
+      web: //i[@class='icon icon-menu']
+      ie: css=button.navbar-toggler
+      android: //*[@text='Toggle navigation']
+  goodRxLogo:
+    en_US:
+      web: //*[@alt='GoodRx Gold Logo']
+      ie: css=img[alt='GoodRx Gold Logo']
+      android: //*[@text='GoodRx Gold Logo']
+  additionalBenefits:
+    en_US:
+      web: //a[contains(text(),'Additional Benefits')]
+      ie: css=div[id='navbarSupportedContent']>ul>li:nth-child(6)
+  createAccountLnk:
+    en_US:
+      web: //*[text()='Create an account']
+      ie: css=form[id='loginForm']>p>a[href$='/sign-up']
+  getStartedWithGoodRx:
+    en_US:
+      web: //*[text()='Get started with GoodRx Gold']
+      ie: css=div>div>h2
+      android: //*[@text='Get started with GoodRx Gold']
+  logInButton:
+    en_Us:
+      web: xpath=(//*[text()='Log In'])[1]
+  googleIcon:
+    en_US:
+      web: //a[contains(text(),'Google')]
+  googleEmail:
+    en_US:
+      web: id=identifierId
+  gmailNextButton:
+    en_US:
+      web: //*[text()='Next']
+  gmailPassword:
+    en_US:
+      web: name=password
+  individualTxt:
+    en_US:
+      web: //*[contains(text(),'Individual')]
+      ie: css=span[class='ml-2']
+  loginBTN:
+    en_US:
+      web: //*[text()='Log in']
+  emailTxt:
+    en_US:
+      web: id=email
+  passwordTxt:
+    en_US:
+      web: id=password
+  navbarSupportedContent:
+    en_US:
+      web: //*[@id='navbarSupportedContent']
+      ie: css=div[id='navbarSupportedContent']
+  lisofpharmacies:
+    en_US:
+      web: //img[@class='m-auto']
+      android: //android.widget.Image[@class='android.widget.Image']
+      ie: css=div[id='full-list']>div:nth-child(4)>div>ul>li
+  findADrugPrice:
+    en_US:
+      web: xpath=(//input[@name='drug_name'])[last()]
+  typeaheadSuggestion:
+    en_US:
+      web: xpath=//div[contains(@class,'tt-suggestion')]
